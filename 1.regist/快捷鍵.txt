@@ -1,0 +1,2 @@
+Ctrl + Shift + R 复制当前一行
+Ctrl + Shift + / 块注释
