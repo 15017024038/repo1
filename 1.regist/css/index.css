@@ -1,0 +1,78 @@
+:root{
+	--success:#00CCFF;
+	--error:red;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* 浏览器会为其分配可使用的最大宽度(比如全屏宽度)，
+	但是不负责分配高度，块级元素的高度是由子元素堆砌撑起来的。 */
+	min-height: 100vh; 
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f9fafb;
+	margin: 0;
+}
+
+.content {
+	border: solid lightgray 2px;
+	border-radius: 5px;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, .3);
+}
+
+.content h1 {
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+/* 父相子绝 */
+.content .form-cotroller {
+	margin: 20px 70px;
+	position: relative;
+}
+
+/* 颜色先进行设置 */
+.form-cotroller.success input {
+	/* border-color + border-style:solid(在之前获得边框)  */
+	border: 1px solid var(--success);
+}
+
+.form-cotroller.error input {
+	border: 1px solid var(--error);
+}
+
+.content .form-cotroller input {
+	display: block;
+	width: 250px;
+	height: 30px;
+	padding-left: 5px;
+	margin: 5px 0 0 0;
+}
+/* 绝对定位主要作用脱离文档流 不然会变形*/
+.content .form-cotroller small {
+	position: absolute;
+	color: red;
+	/* 等于透明度为0 */
+	visibility: hidden;
+}
+
+/* .style.visibility修改css样式 */
+.form-cotroller.error small {
+	visibility: visible;
+}
+
+.content button {
+	background-color: #00CCFF;
+	width: 100%;
+	font-size: 16px;
+	padding: 10px 0;
+	border: none;
+	color: white;
+	width: 250px;
+	margin: 20px 70px;
+}
