@@ -1,4 +1,4 @@
-1.创建本地仓库git的3种方式，git init，图形界面，乌龟创建版本库。文件先添加暂存区->提交。
+1.创建本地仓库git的3种方式，git init，图形界面，乌龟创建版本库，
 2.选择乌龟对版本进行管理就行了。
 3.创建gitHub创库，不要选中Initialize this repository with a README。
-4.添加工程，右键忽略文件。.gitignore也要提交
+4.添加工程，右键忽略文件。.gitignore也要提交。
