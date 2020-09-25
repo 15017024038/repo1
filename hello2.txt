@@ -5,9 +5,4 @@
 1
 22222222222
 gggggggggggggggggggggg
-11
-1
-1
-1
-1
 ffffffffffffffffffffffffffffffffff
